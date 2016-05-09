@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--登录按钮按下背景-->
+    <solid android:color="#e4e5e5" />
+
+    <stroke
+        android:width="0.1dp"
+        android:color="#f3f3f3" />
+<padding android:right="1dp"
+    android:bottom="1dp"
+    android:top="1dp"
+    android:left="1dp"></padding>
+    <corners
+        android:bottomLeftRadius="2dp"
+        android:bottomRightRadius="2dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp" />
+    <!--<corners-->
+        <!--android:bottomLeftRadius="16dip"-->
+        <!--android:bottomRightRadius="16dip"-->
+        <!--android:topLeftRadius="16dp"-->
+        <!--android:topRightRadius="16dip" />-->
+
+</shape>

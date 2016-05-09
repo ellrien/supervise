@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--蓝色背景按钮（例如登录按钮nn酌情引用）-->
+    <corners android:radius="5dp" />
+
+    <solid android:color="@color/deep_blue" />
+
+</shape>

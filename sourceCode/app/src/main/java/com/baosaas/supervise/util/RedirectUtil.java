@@ -5,11 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.baosaas.supervise.activity.InventoryActivity;
 import com.baosaas.supervise.activity.LoginActivity;
 
 
 /**
- * Created by Ellrien on 2015/11/18.
  */
 public class RedirectUtil {
 
@@ -17,6 +17,15 @@ public class RedirectUtil {
         Intent intent = new Intent(activity, LoginActivity.class);
         activity.startActivity(intent);
         activity.finish();
+    }
+    //跳转到盘库状态
+    public static void go2InventryDetail(Context activity, String billNo) {
+        Intent intent = new Intent(activity, InventoryActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("billNo", billNo);
+        intent.putExtras(bundle);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        activity.startActivity(intent);
     }
 
     /*public static void go2SrearchPacknum(String title, Activity activity) {
@@ -56,14 +65,8 @@ public class RedirectUtil {
         activity.startActivity(intent);
     }
 
-    public static void go2InventryDetail(Context activity, String billNo) {
-        Intent intent = new Intent(activity, InventoryActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putString("billNo", billNo);
-        intent.putExtras(bundle);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        activity.startActivity(intent);
-    }
+
+
 
     public static void go2Unbounddetail(Context activity, Unbound unbound) {
         Intent intent = new Intent(activity, UnboundDetailActivity.class);

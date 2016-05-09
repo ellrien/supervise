@@ -85,6 +85,25 @@ public class Config {
         return list;
     }
 
+    public static final String getCheckErrorTypes(String errorDesc) {
+        String result = null;
+        if (errorDesc.equals("货物破损")) {
+            result = "10";
+        } else if (errorDesc.equals("货物变形")) {
+            result = "20";
+        } else if (errorDesc.equals("货物丢失")) {
+            result = "30";
+        } else if (errorDesc.equals("堆放超高")) {
+            result = "40";
+        } else if (errorDesc.equals("已出库")) {
+            result = "50";
+        } else if (errorDesc.equals("其他")) {
+            result = "90";
+        } else if (errorDesc.equals("正常")) {
+            result = "0";
+        }
+        return result;
+    }
 
     public static final String getCheckErrorDesc(int errorType) {
         String result = null;

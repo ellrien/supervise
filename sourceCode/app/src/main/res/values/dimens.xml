@@ -4,4 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="_left_tvSize">16sp</dimen>
     <dimen name="_center_titleSize">18sp</dimen>
+    <dimen name="_layout_marginleft3">3dp</dimen>
+    <dimen name="_layout_marginright3">3dp</dimen>
+    <dimen name="_layout_mT10">10dp</dimen>
 </resources>

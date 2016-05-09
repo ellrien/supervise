@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/info_tit_bg">
+
+        <TextView
+            android:id="@+id/tv_billno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="KK234133132"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_center_titleSize" />
+
+        <LinearLayout
+            android:id="@+id/ll_goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/info_ico_back_new" />
+            <!--android:minHeight="30dp"-->
+            <!--android:minWidth="50dp"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:text="盘库"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_left_tvSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="查看已盘"
+            android:textSize="@dimen/_left_tvSize"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_boundcount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_border_item"
+            android:gravity="center"
+            android:text="后续用"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/lvpack"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_layout_marginleft3"
+            android:layout_marginRight="@dimen/_layout_marginright3"
+            android:layout_marginTop="@dimen/_layout_mT10"
+            android:layout_weight="1"
+            android:dividerHeight="3dp"></ListView>
+    </LinearLayout>

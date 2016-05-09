@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/shape_border_2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#29abe2"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_progressBarTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="新版本提示"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有新版本V1.4.0.4_beta"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_fileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安装包大小为:1323231M"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_updateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新内容:"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:id="@+id/sv_contents"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tv_updateContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical"
+                android:text="有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb有新版本V1.4.0.4_beta\naaaaaaaaaaaaa\naaaaaaaaaaaaaa
+                \nbbbbbbbbbbb"
+                android:textSize="14sp" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right">
+
+            <Button
+                android:id="@+id/btn_tips_cancel"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_radius_blue"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_tips_confirm"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn_tips_cancel"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_radius_blue"
+                android:text="确认"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">监管通</string>
+
+    <string name="customer">欧冶物流股份有限公司</string>
+    <string name="company">上海锦商网络科技有限公司</string>
+    <string name="user_code">姓名</string>
+    <string name="password">密码</string>
+    <string name="packNum">捆包号&#160;&#160;&#160;&#160;:</string>
+
+
+    <string name="title_activity_start">监管通</string>
+    <string name="title_activity_menu">菜单</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_inventory">盘库</string>
+    <string name="title_activity_inventory_list">盘库列表</string>
+    <string name="title_activity_unbound_list">解押列表</string>
+    <string name="title_activity_unbound">解押</string>
+    <string name="title_activity_upload_operation">上传菜单</string>
+    <string name="title_activity_upload_inventory">上传盘库</string>
+    <string name="title_activity_upload_unbound">上传解押</string>
+
+    <string name="info_readio_buzy">模块正在处理其他事务(如盘点),请稍后重试</string>
+    <string name="info_oper_fail">操作失败</string>
+    <string name="info_no_tags">未发现任何标签</string>
+    <string name="info_tag_read_error">标签读取出错</string>
+    <string name="appname"><b>质管通</b></string>
+    <string name="_tcpprotocol">已阅读并同意</string>
+    <string name="_userprotocol">《用户协议》</string>
+
+</resources>

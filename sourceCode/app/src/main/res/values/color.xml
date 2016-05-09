@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--白色-->
+    <color name="white">#ffffff</color>
+    <!--浅蓝-->
+    <color name="lightBlue">#0099cc</color>
+    <!--黄色-->
+    <color name="yellow">#F9FB22</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--灰色-->
+    <color name="cyan">#8dc21f</color>
+    <!--青色-->
+    <color name="backred">#c91c1d</color>
+    <!--背景红色-->
+    <color name="gray">#F8F7F7</color>
+    <!--浅绿-->
+    <color name="lightGreen">#99cc33</color>
+
+    <color name="background_tab_pressed">#29ABE2</color>
+    <color name="customer_blue">#29ABE2</color>
+    <color name="customer_grey">#999999</color>
+    <color name="customer_red">#ed1c24</color>
+    <color name="customer_yellow">#fbb03b</color>
+    <color name="customer_green">#8CC63F</color>
+    <color name="sliding_menu_item_down">#ff39393b</color>
+    <color name="sliding_menu_item_release">#00000000</color>
+    <color name="sliding_menu_background">#ff2c2c2e</color>
+    <color name="sliding_menu_body_background">#fff5f5f5</color>
+    <color name="blue_color">#125876</color>
+    <color name="grey_color">#808080</color>
+    <color name="green_color">#8CC63F</color>
+    <color name="orange_color">#EFA248</color>
+    <color name="grey_bg_color">#F2F2F2</color>
+    <color name="grey_color_b3">#B3B3B3</color>
+    <color name="grey_color_99">#999999</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="red">#ff0000</color>
+    <color name="whiteblack">#333333</color>
+    <color name="aliceblue">#f0f8ff</color>
+
+    <!-- 新版UI颜色-->
+    <!--深蓝-->
+    <color name="deep_blue">#2ca6e0</color>
+    <!--灰色-->
+    <color name="grey">#f1f1f1</color>
+    <!--字体灰色-->
+    <color name="grey_font">#999999</color>
+    <!--字体黄色-->
+    <color name="yellow_font">#ffc200</color>
+
+    <color name="grey_background">#ebeced</color>
+    <!--线条灰色-->
+    <color name="grey_line">#cccccc</color>
+    <!--字体蓝色-->
+    <color name="blue_font">#0078bf</color>
+    <!--字体浅灰-->
+    <color name="lightBlue_font">#999999</color>
+    <!--字体黑色-->
+    <color name="black_font">#333333</color>
+    <!--字体绿色-->
+    <color name="green">#9edc6b</color>
+    <!--输入框灰色背景-->
+    <color name="editTextGrey">#eeeeee</color>
+    <!--浅橙-->
+    <color name="lightOrange">#F7C134</color>
+    <!--字体浅橙-->
+    <color name="lightFontOrange">#F29600</color>
+
+    <!--字体浅蓝-->
+    <color name="lightFontblue">#17AAC7</color>
+
+    <color name="blue_background">#135977</color>
+    <color name="grayBlue">#135977</color>
+    <color name="yellow_new">#ffff66</color>
+</resources>

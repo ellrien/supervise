@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="tvgray">#ededed</color>
+    <color name="tvgrays">#3b7084</color>
+    <color name="lv">#fff</color>
+
+</resources>

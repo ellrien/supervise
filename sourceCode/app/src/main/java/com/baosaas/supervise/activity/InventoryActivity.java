@@ -73,8 +73,6 @@ public class InventoryActivity extends BaseActivity {
     private final static int MSG_DBREAD = 10;
 
     private Intent mIntent;
-    //rfid模块是否开启
-    boolean rfidStarted = false;
 
     HandlerThread localHandlerThread;
     Handler handlers;
@@ -137,24 +135,6 @@ public class InventoryActivity extends BaseActivity {
         int screenHeight = dm.heightPixels;//480
         if (screenHeight < 855 || screenWidth < 402) {
             tvBillno.setTextSize(9);
-        }
-
-        String a = "";
-        if (AppManager.getInstance().getSeTerminal() == null) {
-            startRfid.setClickable(false);
-            startRfid.setText("手机无法扫描");
-
-        } else {
-            a = AppManager.getInstance().getSeTerminal().toString();
-        }
-
-        if ("201".equals(a)) {
-            //手机
-            startRfid.setVisibility(View.GONE);
-        } else {
-            //PDA
-            startRfid.setVisibility(View.VISIBLE);
-
         }
 
     }

@@ -12,7 +12,7 @@ import java.util.List;
 public class InventoryBillOut {
     private int flag;//0 失败   1成功   2 token失效
     private String msg;
-    List<Inventory> bills = new ArrayList<>();
+    private List<Inventory> inventoryTasks;
 
     public int getFlag() {
         return flag;
@@ -30,11 +30,12 @@ public class InventoryBillOut {
         this.msg = msg;
     }
 
-    public List<Inventory> getBills() {
-        return bills;
+    public List<Inventory> getInventoryTasks() {
+        return inventoryTasks;
     }
 
-    public void setBills(List<Inventory> bills) {
-        this.bills = bills;
+    public void setInventoryTasks(List<Inventory> inventoryTasks) {
+        this.inventoryTasks = inventoryTasks;
     }
+
 }

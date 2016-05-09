@@ -140,9 +140,10 @@ public class NewInventoryListActivity extends BaseActivity {
 
     private void refreshFromService() {
         if (NetSupport.checkNetWork(NewInventoryListActivity.this)) {
-            InventoryInterface systemI = new InventoryInterface();
+            InventoryInterface inventoryInterface = new InventoryInterface();
             UserBillIn billIn = new UserBillIn(SharedUtil.getInstance().userCode, SharedUtil.getInstance().accessToken);
-            InventoryBillOut billOut = systemI.getBillList(billIn);
+            InventoryBillOut billOut = null;
+            billOut = inventoryInterface.getInventoryTask(billIn);
             if (billOut != null) {
                 if (billOut.getFlag() == 0) {
                     HandlerUtils.sendMsg(handler, MSG_SHOWTOAST, billOut.getMsg());
@@ -155,7 +156,7 @@ public class NewInventoryListActivity extends BaseActivity {
                     HandlerUtils.sendMsg(handler, MSG_NOTOKEN, "登录失效");
                 }
             } else {
-                HandlerUtils.sendMsg(handler, MSG_SHOWTOAST, "上传失败");
+                HandlerUtils.sendMsg(handler, MSG_SHOWTOAST, "下载失败");
             }
         } else {
             HandlerUtils.sendMsg(handler, MSG_SHOWTOAST, "当前没有网络，请在网络下更新");
@@ -164,7 +165,7 @@ public class NewInventoryListActivity extends BaseActivity {
 
     private void insertDB(InventoryBillOut out) {
 
-        List<Inventory> listBill = out.getBills();
+        List<Inventory> listBill = out.getInventoryTasks();
 
         if (listBill != null && listBill.size() > 0) {
             List<Inventory> needInsertData = new ArrayList<>();//需要插入的数据源
